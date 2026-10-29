@@ -1,8 +1,8 @@
 // SMSGate Web Dashboard
 //
-//	@title			SMSGate Web Dashboard API
-//	@version		1.0.0
-//	@description	Web dashboard for the SMSGate. Provides a UI and API for managing devices, messages, webhooks, and settings.
+//	@title			Notreve Gateway SMS Dashboard API
+//	@version		1.0
+//	@description	Painel web do Notreve Gateway SMS: interface e API para gerenciar aparelhos, mensagens, webhooks e configurações.
 //
 //	@contact.name	API Support
 //	@contact.url	https://github.com/capcom6

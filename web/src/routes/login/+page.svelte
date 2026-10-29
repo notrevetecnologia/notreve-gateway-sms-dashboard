@@ -27,7 +27,7 @@
 			await login({ login: username, password });
 			goto('/');
 		} catch (e: unknown) {
-			error = e instanceof Error ? e.message : 'Login failed';
+			error = e instanceof Error ? e.message : 'Falha no login';
 		} finally {
 			loading = false;
 		}
@@ -37,8 +37,9 @@
 <div class="flex min-h-screen items-center justify-center">
 	<Card class="w-full max-w-sm">
 		<CardHeader class="text-center">
-			<CardTitle class="text-2xl">SMS Dashboard</CardTitle>
-			<CardDescription>SMSGate</CardDescription>
+			<img src="/logo.png" alt="Notreve" class="mx-auto mb-2 h-8 w-auto" />
+			<CardTitle class="text-2xl">Notreve Gateway SMS</CardTitle>
+			<CardDescription>Painel de controle</CardDescription>
 		</CardHeader>
 		<form onsubmit={handleSubmit}>
 			<CardContent class="space-y-4">
@@ -49,12 +50,12 @@
 				{/if}
 				<div class="space-y-2">
 					<label for="login" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-						Login
+						Usuário
 					</label>
 					<Input
 						id="login"
 						type="text"
-						placeholder="Enter your login"
+						placeholder="seu usuário"
 						autocomplete="username"
 						bind:value={username}
 						disabled={loading}
@@ -62,12 +63,12 @@
 				</div>
 				<div class="space-y-2">
 					<label for="password" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-						Password
+						Senha
 					</label>
 					<Input
 						id="password"
 						type="password"
-						placeholder="Enter your password"
+						placeholder="sua senha"
 						autocomplete="current-password"
 						bind:value={password}
 						disabled={loading}
@@ -76,7 +77,7 @@
 			</CardContent>
 			<CardFooter>
 				<Button type="submit" class="w-full" disabled={loading}>
-					{loading ? 'Signing in...' : 'Sign In'}
+					{loading ? 'Entrando...' : 'Entrar'}
 				</Button>
 			</CardFooter>
 		</form>

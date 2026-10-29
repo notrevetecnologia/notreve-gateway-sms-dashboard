@@ -35,12 +35,12 @@
 	});
 
 	const navItems = [
-		{ href: "/", label: "Dashboard", icon: "LayoutDashboard" },
-		{ href: "/messages", label: "Messages", icon: "MessageSquare" },
-		{ href: "/devices", label: "Devices", icon: "Smartphone" },
+		{ href: "/", label: "Painel", icon: "LayoutDashboard" },
+		{ href: "/messages", label: "Mensagens", icon: "MessageSquare" },
+		{ href: "/devices", label: "Aparelhos", icon: "Smartphone" },
 		{ href: "/webhooks", label: "Webhooks", icon: "Link" },
-		{ href: "/settings", label: "Settings", icon: "Settings" },
-		{ href: "/tokens", label: "API Tokens", icon: "Key" },
+		{ href: "/settings", label: "Configurações", icon: "Settings" },
+		{ href: "/tokens", label: "Tokens de API", icon: "Key" },
 	];
 
 	function navClass(href: string) {
@@ -56,7 +56,7 @@
 </script>
 
 <svelte:head>
-	<title>SMS Dashboard</title>
+	<title>Notreve Gateway SMS</title>
 </svelte:head>
 
 {#if $page.url.pathname.startsWith("/login")}
@@ -75,8 +75,9 @@
 			class="fixed inset-y-0 left-0 z-50 w-60 -translate-x-full flex flex-col border-r bg-background transition-transform duration-200 lg:static lg:translate-x-0"
 			class:translate-x-0={sidebarOpen}
 		>
-			<div class="flex h-14 items-center border-b px-4 font-bold text-lg">
-				SMS Dashboard
+			<div class="flex h-14 items-center gap-2 border-b px-4 font-bold text-lg">
+				<img src="/mark.png" alt="" class="h-7 w-7 rounded-md" />
+				<span>Notreve Gateway</span>
 			</div>
 
 			<nav class="flex flex-col gap-1 p-2 flex-1 overflow-y-auto">

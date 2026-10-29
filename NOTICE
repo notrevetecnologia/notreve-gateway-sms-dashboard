@@ -1,0 +1,13 @@
+Notreve Gateway SMS — Painel
+Copyright 2026 Notreve Tecnologia
+
+Este produto é um fork de SMSGate Web Dashboard
+(https://github.com/android-sms-gateway/web-dashboard),
+Copyright Aleksandr Soloshenko, licenciado sob a Apache License 2.0.
+
+Alterações realizadas pela Notreve:
+- marca, nome, textos e identidade visual;
+- tema e padrões de deploy;
+- correções e funcionalidades adicionais.
+
+O texto completo da licença está em LICENSE.

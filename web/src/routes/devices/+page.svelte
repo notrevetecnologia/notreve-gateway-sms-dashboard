@@ -81,7 +81,7 @@
 	{:else if devices.length === 0}
 		<div class="rounded-lg border p-12 text-center">
 			<p class="text-lg font-medium">No devices registered</p>
-			<p class="mt-1 text-sm text-muted-foreground">Register a device on the SMS Gateway app to get started.</p>
+			<p class="mt-1 text-sm text-muted-foreground">Cadastre um aparelho no app Notreve SMS para começar.</p>
 		</div>
 	{:else}
 		<p class="text-sm text-muted-foreground">{devices.length} device{devices.length !== 1 ? 's' : ''}</p>
